@@ -1,35 +1,25 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
 
-export default function MultiActionAreaCard() {
+import CardMedia from '@mui/material/CardMedia';
+import Styles from './Card.module.scss'
+interface Porops {
+  name: string;
+  link: string;
+  logo: string;
+}
+
+
+export default function MultiActionAreaCard({ name, link, logo }: Porops) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-      </CardActions>
-    </Card>
+    <div className={Styles.container}>
+      <div className={Styles.image_container}>
+        <img src={logo} alt=""  width='100%' height='100%'/>
+      </div>
+
+      <div className={Styles.link_container}>
+        <a href="{link}">Order Now</a>
+      </div>
+    </div>
   );
 }
