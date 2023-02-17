@@ -1,7 +1,4 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
 
-import CardMedia from '@mui/material/CardMedia';
 import Styles from './Card.module.scss'
 interface Porops {
   name: string;
@@ -9,11 +6,17 @@ interface Porops {
   logo: string;
 }
 
+const handlenaviagton = (link: string)=>{
+
+    window.location.replace(link)
+
+
+}
 
 export default function MultiActionAreaCard({ name, link, logo }: Porops) {
   return (
     <div className={Styles.container}>
-      <div className={Styles.image_container}>
+      <div className={Styles.image_container} onClick={()=>handlenaviagton(link)}>
         <img src={logo} alt=""  width='100%' height='100%'/>
       </div>
 

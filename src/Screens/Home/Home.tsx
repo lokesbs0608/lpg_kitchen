@@ -8,12 +8,10 @@ import Swiggy from '../../assets/Logo/Swiggy-logo-png.webp'
 import Fassos from '../../assets/Logo/faaso_logo.jpg'
 import UberEats from '../../assets/Logo/uber-eats-logo.png'
 
-const Home = () => {
+const Others = () => {
     const restoObj = [
-        { id: '0', name: 'Zomto', logo: zomoto, link: '' },
+        { id: '0', name: 'Zomto', logo: zomoto, link: 'https://www.zomato.com/bangalore/lpg-kitchen-rajarajeshwari-nagar-bangalore' },
         { id: '1', name: 'Swiggy', logo: Swiggy, link: '' },
-        { id: '2', name: 'Fassos', logo: Fassos, link: '' },
-        { id: '3', name: 'UberEats', logo: UberEats, link: '' },
     ]
     return (
         <div className={Styles.container}>
@@ -41,4 +39,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Others

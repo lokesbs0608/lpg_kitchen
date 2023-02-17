@@ -1,0 +1,28 @@
+.menu_outer_conatiner{
+    padding: 10px;
+}
+.card_container{
+    margin: 0 auto;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 5px;
+    max-width: 345px;
+    height: 150px;
+}
+.inner_container{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    height: 150px;
+    align-content: center;
+}
+.check_box_conatiner{
+    width: 15%;
+}
+.description_conatienr{
+    width: 50%;
+}
+.image_conatiner{
+    width: 35%;
+}

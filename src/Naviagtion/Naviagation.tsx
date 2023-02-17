@@ -1,12 +1,14 @@
 
 import { Route, Routes, redirect } from 'react-router-dom'
-import Home from '../Screens/Home/Home'
+import Others from '../Screens/Home/Home'
+import MenuCard from '../Components/MenuCard/MenuCard'
 
- const Navigation = () => {
+const Navigation = () => {
 
     return (
         <Routes>
-            <Route path="/" element={ <Home /> } />
+            <Route path="/" element={<MenuCard />} />
+            <Route path="others" element={<Others />} />
         </Routes>
     )
 }

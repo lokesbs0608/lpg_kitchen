@@ -9,7 +9,7 @@ function App() {
     <div>
     <ResponsiveAppBar/>
     <Navigation/>
-    {/* <Footer/> */}
+    <Footer/>
     </div>
   )
 }
