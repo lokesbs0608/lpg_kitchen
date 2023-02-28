@@ -1,0 +1,91 @@
+{
+    "menuList": [
+        {
+            "title": "Soup",
+            "menu": [
+                {
+                    "id": 0,
+                    "title": "Veg Manchoo Soup",
+                    "description": "Vegetable Manchow soup is an Indo-Chinese soup made with mixed vegetables, noodles, and flavored with soy sauce, vinegar, and chili peppers. It is a spicy and tangy soup that is often served as a starter in Indian and Chinese cuisine.",
+                    "price": 99,
+                    "image": ""
+                },
+                {
+                    "id": 1,
+                    "title": "Hot and Sour Soup",
+                    "description": "Hot and sour soup is a Chinese soup made with a spicy and tangy broth, mushrooms, tofu, bamboo shoots, and sometimes meat. It is flavored with vinegar, soy sauce, and chili peppers, and is often served as a starter in Chinese cuisine.",
+                    "price": 99,
+                    "image": ""
+                },
+                {
+                    "id": 2,
+                    "title": "Cream of Paneato Soup",
+                    "description": "It is flavored with vinegar, soy sauce, and chili peppers, and is often served as a starter in Chinese cuisine.",
+                    "price": 99,
+                    "image": ""
+                }
+            ]
+        },
+        {
+            "title": "Staters",
+            "menu": [
+                {
+                    "id": 0,
+                    "title": "Chilli Potato",
+                    "description": "Chilli potato is an Indo-Chinese dish made by frying or baking potato wedges until crispy and then tossing them in a spicy and tangy sauce made with garlic, ginger, soy sauce, chili sauce, vinegar, and sugar. ",
+                    "price": 99,
+                    "image": ""
+                },
+                {
+                    "id": 1,
+                    "title": "Honey Chilly Potato",
+                    "description": "",
+                    "price": 129,
+                    "image": ""
+                },
+                {
+                    "id": 1,
+                    "title": "",
+                    "description": "",
+                    "price": 129,
+                    "image": ""
+                },
+                {
+                    "id": 1,
+                    "title": "",
+                    "description": "",
+                    "price": 129,
+                    "image": ""
+                },
+                {
+                    "id": 1,
+                    "title": "",
+                    "description": "",
+                    "price": 129,
+                    "image": ""
+                },
+                {
+                    "id": 1,
+                    "title": "",
+                    "description": "",
+                    "price": 129,
+                    "image": ""
+                },
+                {
+                    "id": 1,
+                    "title": "",
+                    "description": "",
+                    "price": 129,
+                    "image": ""
+                },
+                {
+                    "id": 1,
+                    "title": "",
+                    "description": "",
+                    "price": 129,
+                    "image": ""
+                }
+            ]
+        }
+    ]
+}
