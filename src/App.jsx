@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 function App() {
   return (
     <div>
-    {/* <ResponsiveAppBar/> */}
+    <ResponsiveAppBar/>
     <Navigation/>
     {/* <Footer/> */}
     </div>
