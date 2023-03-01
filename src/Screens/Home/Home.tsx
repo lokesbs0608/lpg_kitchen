@@ -16,7 +16,7 @@ const Others = () => {
             <div className={Styles.text_center}>
                 <h2>LPG KITCHEN</h2>
                 <p>Call us on </p>
-                <h6 >8792566795</h6>
+                <h6 className={Styles.mobile_number} > <a href="tel:+918792566795">8792566795</a></h6>
             <h1 className='mt-5' >Order From</h1>
             </div>
             <div className={Styles.Qr_container} >
