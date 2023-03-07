@@ -7,8 +7,8 @@ const Navigation = () => {
 
     return (
         <Routes>
-            <Route path="/" element={<MenuCard />} />
-            <Route path="others" element={<Others />} />
+            <Route path="menu" element={<MenuCard />} />
+            <Route path="/" element={<Others />} />
         </Routes>
     )
 }

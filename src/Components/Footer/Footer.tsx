@@ -24,8 +24,8 @@ export default function Footer() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction onClick={()=>handleNaviagtion('others')}  label="Order" icon={<AltRouteSharpIcon />} />
-          <BottomNavigationAction onClick={()=>handleNaviagtion('/')} label="Menu" icon={<MenuIcon />} />
+          <BottomNavigationAction onClick={()=>handleNaviagtion('/')}  label="Order" icon={<AltRouteSharpIcon />} />
+          <BottomNavigationAction onClick={()=>handleNaviagtion('menu')} label="Menu" icon={<MenuIcon />} />
         </BottomNavigation>
       </Paper>
     </Box>
