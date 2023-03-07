@@ -4,15 +4,17 @@ import ResponsiveAppBar from './Components/Header/Header';
 import Navigation from './Naviagtion/Naviagation';
 import Footer from './Components/Footer/Footer'
 import 'bootstrap/dist/css/bootstrap.css';
-// Put any other imports below so that CSS from your
-// components takes precedence over default styles.
+
+import './App.css'
 
 function App() {
   return (
     <div>
     <ResponsiveAppBar/>
+    <div className='scroll_fix' style={{marginTop:'4rem',marginBottom:'4rem'}}>
     <Navigation/>
-    {/* <Footer/> */}
+    </div>
+    <Footer/>
     </div>
   )
 }
