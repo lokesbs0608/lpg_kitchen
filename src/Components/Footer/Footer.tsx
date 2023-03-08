@@ -6,10 +6,12 @@ import { Paper } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import AltRouteSharpIcon from '@mui/icons-material/AltRouteSharp';
 import { To, useNavigate } from 'react-router-dom';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 export default function Footer() {
     let navigate = useNavigate();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(1);
   const handleNaviagtion= (path: string)=>{
     navigate(path);
   }
@@ -24,8 +26,11 @@ export default function Footer() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction onClick={()=>handleNaviagtion('/')}  label="Order" icon={<AltRouteSharpIcon />} />
           <BottomNavigationAction onClick={()=>handleNaviagtion('menu')} label="Menu" icon={<MenuIcon />} />
+          <BottomNavigationAction onClick={()=>handleNaviagtion('/')}  label="Order" icon={<AltRouteSharpIcon />} />
+          <BottomNavigationAction onClick={()=>handleNaviagtion('cart')} label="Cart" icon={<ShoppingCartIcon />} />
+          <BottomNavigationAction onClick={()=>handleNaviagtion('account')} label="Account" icon={<AccountCircleIcon />} />
+
         </BottomNavigation>
       </Paper>
     </Box>

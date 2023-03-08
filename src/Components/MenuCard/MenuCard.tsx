@@ -23,7 +23,7 @@ const MenuCard = () => {
     let navigate = useNavigate();
 
     const handleNaviagtion = (path: string) => {
-        window.location.href = path
+        // window.location.href = path
     }
 
     const MenuList = ({ title, Veg, Chicken, Status, Egg, Prawns, index }: Props) => {
@@ -35,7 +35,7 @@ const MenuCard = () => {
 
                     </div>
                     <div className={Styles.product_name_container}>
-                        <div style={{ fontWeight: '600' }}>{title}</div>
+                        <div style={{ fontWeight: '600', textEmphasis: 'Menu', whiteSpace: 'pre-wrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{title}</div>
                         <div style={{ fontSize: '12px', }}>
                             <div style={{ display: 'flex', gap: '15px' }}>
                                 {Veg && (
@@ -72,6 +72,35 @@ const MenuCard = () => {
                             </div>
                         </div>
                     </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '4px',color:'fff' }} >
+                        {Veg && (<div className={Styles.add_btn_conatiner} style={{ background: '#3ea23e', fontSize: '8px', display: 'flex', gap: '4px' }} >
+                            <div style={{ width: '20%',fontSize:'12px' }}>-</div>
+                            <div style={{ width: '60%' }} >Veg</div>
+                            <div style={{ width: '20%',fontSize:'12px' }}>+</div>
+                        </div>)}
+
+                        {Chicken && (
+                            <div className={Styles.add_btn_conatiner} style={{ fontSize: '8px', display: 'flex', gap: '4px', background: '#A52A2A' }} >
+                                <div style={{ width: '20%',fontSize:'12px' }}>-</div>
+                                <div style={{ width: '60%' }} >Chicken</div>
+                                <div style={{ width: '20%',fontSize:'12px' }}>+</div>
+                            </div>
+                        )}
+                        {Prawns && (
+                            <div className={Styles.add_btn_conatiner} style={{ fontSize: '8px', display: 'flex', gap: '4px',background: '#A52A2A'  }} >
+                                <div style={{ width: '20%',fontSize:'12px' }}>-</div>
+                                <div style={{ width: '60%' }} >Prawns</div>
+                                <div style={{ width: '20%',fontSize:'12px' }}>+</div>
+                            </div>
+                        )
+                        }         {Egg && (<div className={Styles.add_btn_conatiner} style={{ fontSize: '8px', display: 'flex', gap: '4px',background: '#e8c758'  }} >
+                            <div style={{ width: '20%',fontSize:'12px' }}>-</div>
+                            <div style={{ width: '60%' }} >Egg</div>
+                            <div style={{ width: '20%',fontSize:'12px' }}>+</div>
+                        </div>)}
+
+
+                    </div>
                 </div>
             </div>
 
@@ -94,7 +123,6 @@ const MenuCard = () => {
                                     <div  >
                                         {ele?.status && (
                                             <MenuList index={index} key={ele.id} title={ele.title} Status={ele?.status} image={''} description={ele.description} Chicken={ele?.Chicken} Prawns={ele?.Pranws} Egg={ele?.Egg} Veg={ele?.Veg} />
-
                                         )}
                                     </div>
 
